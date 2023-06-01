@@ -75,4 +75,10 @@
     .info-container {
         width: 95%;
     }
+    .search-container {
+        margin-top: 18%;
+    }
+    .main-container {
+        margin-top: 3%;
+    }
 }

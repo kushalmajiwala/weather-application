@@ -10,34 +10,32 @@ function App() {
 
   return (
     <>
-      <div className="outer-container">
-        <p style={{ textAlign: 'center', fontSize: '25px', color:'white' }}>WEATHER APPLICATION</p>
-        <div className="search-container">
-          <span className="p-input-icon-left">
-            <i className="pi pi-search searchIcon" />
-            <InputText placeholder="Search" />
-          </span>
-          <Button label="Search" />
-        </div>
-        <div className="main-container">
-          <div className="info-container">
-            <div className='cloud-container'>
-              hello
+      <p style={{ textAlign: 'center', fontSize: '25px', color: 'white' }}>WEATHER APPLICATION</p>
+      <div className="search-container">
+        <span className="p-input-icon-left">
+          <i className="pi pi-search searchIcon" />
+          <InputText placeholder="Search" />
+        </span>
+        <Button label="Search" />
+      </div>
+      <div className="main-container">
+        <div className="info-container">
+          <div className='cloud-container'>
+            hello
+          </div>
+          <div className='temp-container'>
+            <div className='value-container'>
+              <p>58</p>
+              <p>clouds</p>
             </div>
-            <div className='temp-container'>
-              <div className='value-container'>
-                <p>58</p>
-                <p>clouds</p>
-              </div>
-              <div className='date-container'>
-                <p>5/5/2023</p>
-                <p>3:3:3 PM</p>
-              </div>
+            <div className='date-container'>
+              <p>5/5/2023</p>
+              <p>3:3:3 PM</p>
             </div>
-            <div className='details-container'>
-              <p>Hello</p>
-              <p>hi</p>
-            </div>
+          </div>
+          <div className='details-container'>
+            <p>Hello</p>
+            <p>hi</p>
           </div>
         </div>
       </div>
