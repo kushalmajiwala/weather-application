@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { InputText } from "primereact/inputtext";
 import { Button } from 'primereact/button';
 import Weathercard from './components/weathercard';
+import axios from 'axios';
 import './style.css';
 
 function App() {
@@ -10,26 +11,23 @@ function App() {
   const [tempInfo, setTempInfo] = useState({});
 
   const getWeatherInfo = async () => {
-    try {
-      let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=232738817f4de756f5e8e55677a5d338`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=232738817f4de756f5e8e55677a5d338`;
 
-      const res = await fetch(url);
-      const data = await res.json();
+    axios.get(url)
+      .then((res) => {
+        const data = res.data;
+        console.log(res.data);
+        const { temp, humidity, pressure } = data.main;
+        const { main: weathermood } = data.weather[0];
+        const { name } = data;
+        const { speed } = data.wind;
+        const { country, sunset } = data.sys;
 
-      const { temp, humidity, pressure } = data.main;
-      const { main: weathermood } = data.weather[0];
-      const { name } = data;
-      const { speed } = data.wind;
-      const { country, sunset } = data.sys;
-
-      const myNewWeatherInfo = {
-        temp, humidity, pressure, weathermood, name, speed, country, sunset
-      };
-      setTempInfo(myNewWeatherInfo);
-
-    } catch (error) {
-      console.log(error);
-    }
+        const myNewWeatherInfo = {
+          temp, humidity, pressure, weathermood, name, speed, country, sunset
+        };
+        setTempInfo(myNewWeatherInfo);
+      });
   }
 
   useLayoutEffect(() => {
@@ -51,7 +49,7 @@ function App() {
         </span>
         <Button label="Search" onClick={getWeatherInfo} />
       </div>
-      <Weathercard tempInfo={tempInfo}/>
+      <Weathercard tempInfo={tempInfo} />
     </>
   );
 }
