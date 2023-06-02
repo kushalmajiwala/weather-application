@@ -116,7 +116,8 @@
         font-size: 5vh;
     }
     .cloud {
-        font-size: 5vh;
+        margin-top: 50%;
+        font-size: 4vh;
     }
     .date {
         font-size: 2vh;
@@ -132,6 +133,6 @@
     }
     .commonText {
         margin-top: -15%;
-        font-size: 1vh;
+        font-size: 1.2vh;
     }
 }
