@@ -27,6 +27,9 @@ function App() {
           temp, humidity, pressure, weathermood, name, speed, country, sunset
         };
         setTempInfo(myNewWeatherInfo);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }
 
