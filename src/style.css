@@ -29,6 +29,7 @@
     background-color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    font-size: 90px;
 }
 .temp-container {
     width: 100%;
@@ -52,7 +53,6 @@
     color: white;
     display: inline;
     text-align: center;
-    padding-top: 5vh;
 }
 .details-container {
     width: 100%;
@@ -65,6 +65,37 @@
     justify-content: space-evenly;
     align-items: center;
 }
+.degree {
+    font-size: 8vh;
+}
+.cloud {
+    font-size: 8vh;
+}
+.country {
+    font-size: 2vh;
+    margin-top: -40%;
+}
+.country-container {
+    display: inline-block;
+    padding-bottom: 12%;
+}
+.date {
+    font-size: 5vh;
+}
+.time {
+    font-size: 5vh;
+    margin-top: -17%;
+}
+.commonIcon {
+    font-size: 3vh;
+    color: rgb(54, 147, 119);
+}
+.commonInfo {
+    font-size: 1vw;
+}
+.commonText {
+    margin-top: -20%;
+}
 
 @media only screen and (max-width: 840px) {
     .info-container {
@@ -73,12 +104,33 @@
 }
 @media only screen and (max-width: 430px) {
     .info-container {
-        width: 95%;
+        width: 98%;
     }
     .search-container {
         margin-top: 18%;
     }
     .main-container {
         margin-top: 3%;
+    }
+    .degree {
+        font-size: 5vh;
+    }
+    .cloud {
+        font-size: 5vh;
+    }
+    .date {
+        font-size: 3vh;
+    }
+    .time{
+        font-size: 3vh;
+    }
+    .date-container {
+        padding-top: 9%;
+    }
+    .commonIcon {
+        font-size: 2vh;
+    }
+    .commonText {
+        margin-top: -10%;
     }
 }
