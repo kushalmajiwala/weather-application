@@ -66,28 +66,28 @@ export const Weathercard = ({ tempInfo }) => {
                             <i class="bi bi-sunset commonIcon"></i>
                         </div>
                         <div className='sunInfo commonInfo'>
-                            <p style={{fontSize:'1.2vh'}}>{timeStr} PM</p>
+                            <p style={{fontSize:'1.4vh'}}>{timeStr} PM</p>
                             <p className='commonText'>Sunset</p>
                         </div>
                         <div className='humidityIcon'>
                             <i class="bi bi-droplet-half commonIcon"></i>
                         </div>
                         <div className='humidityInfo commonInfo'>
-                            <p style={{fontSize:'1.2vh'}}>{humidity}</p>
+                            <p style={{fontSize:'1.4vh'}}>{humidity}</p>
                             <p className='commonText'>Humidity</p>
                         </div>
                         <div className='pressureIcon'>
                             <i class="bi bi-cloud-rain commonIcon"></i>
                         </div>
                         <div className='pressureInfo commonInfo'>
-                            <p style={{fontSize:'1.2vh'}}>Pressure</p>
+                            <p style={{fontSize:'1.4vh'}}>Pressure</p>
                             <p className='commonText'>{pressure} MM</p>
                         </div>
                         <div className='windIcon'>
                             <i class="bi bi-wind commonIcon"></i>
                         </div>
                         <div className='windInfo commonInfo'>
-                            <p style={{fontSize:'1.2vh'}}>Wind-Speed</p>
+                            <p style={{fontSize:'1.4vh'}}>Wind-Speed</p>
                             <p className='commonText'>{speed}</p>
                         </div>
                     </div>

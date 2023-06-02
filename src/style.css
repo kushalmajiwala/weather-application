@@ -133,6 +133,9 @@
     }
     .commonText {
         margin-top: -15%;
-        font-size: 1.2vh;
+        font-size: 1.4vh;
+    }
+    .country {
+        margin-top: -35%;
     }
 }
