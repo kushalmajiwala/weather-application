@@ -13,7 +13,7 @@ export const Weathercard = ({ tempInfo }) => {
         if (weathermood) {
             switch (weathermood) {
                 case "Rain":
-                    setWeatherState("bi bi-cloud");
+                    setWeatherState("bi bi-cloud-rain-heavy");
                     break;
                 case "Clouds":
                     setWeatherState("bi bi-cloud");
