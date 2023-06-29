@@ -12,6 +12,9 @@ export const Weathercard = ({ tempInfo }) => {
     useEffect(() => {
         if (weathermood) {
             switch (weathermood) {
+                case "Rain":
+                    setWeatherState("bi bi-cloud");
+                    break;
                 case "Clouds":
                     setWeatherState("bi bi-cloud");
                     break;
